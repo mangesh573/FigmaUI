@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .browser-category-card{
+        @apply max-w-[200px] md:max-w-[215px] lg:max-w-[220px] h-[280px] pt-[65px] pr-[130px] pb-[95px] ps-[30px] bg-warmGray rounded-lg;
+    }
+    .card-icon{
+        @apply pt-[12px] pr-[14px] pb-[11px] ps-[13px]
+    }
+    .article-post-card{
+        @apply flex  flex-col sm:flex-row md:flex-col  md:justify-between items-center gap-7 sm:gap-20 md:gap-[30px] rounded-[12px] max-w-[300px] sm:max-w-full md:max-w-[300px] md:h-[425px] p-[20px] hover:shadow-2xl w-full md:basis-2/4 ; 
+    }
+    .footerTextSize{
+        @apply text-lg font-normal leading-tight text-textblack mt-4;
+    }
+    .container{
+        --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+    }
+    }
+    
